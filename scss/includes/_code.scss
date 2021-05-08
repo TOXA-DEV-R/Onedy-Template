@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+/* font-family start*/
+:root {
+  --font-fy-Poppins: "Poppins", sans-serif;
+  --font-fy-Playfair-d: "Playfair Display", serif;
+  --font-weight-Medium: 500; ///global weight Medium
+  --white-gl: white; // global white
+}
+html {
+  font-size: 16px;
+}
+/* font-family end*/
+
+// font-family scss start
+$font-fy-Poppins: var(--font-fy-Poppins);
+$font-fy-Playfair-d: var(--font-fy-Playfair-d);
+$font-weight-Medium: var(--font-weight-Medium);
+$white-gl: var(--white-gl); // global white
+// font-family scss end
+* {
+  font-family: $font-fy-Poppins;
+}
