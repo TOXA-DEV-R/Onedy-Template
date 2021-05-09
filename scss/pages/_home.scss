@@ -1,3 +1,4 @@
+/*home start*/
 @mixin fontMix_01($size, $height, $weight) {
   font-size: $size;
   line-height: $height;
@@ -508,9 +509,4 @@ header {
 }
 /* @media lg min width 1200 end*/
 
-/* @media lg min width 1200 start*/
-@media screen and (min-width: 1330px) {
-  .header-home {
-  }
-}
-/* @media lg min width 1200 end*/
+/*home end*/

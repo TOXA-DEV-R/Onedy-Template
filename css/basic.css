@@ -23,6 +23,16 @@ html {
   font-family: var(--font-fy-Poppins);
 }
 
+/* global artical-text start*/
+h3.articl-text {
+  font-family: var(--font-fy-Playfair-d);
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #04004d;
+}
+
+/* global artical-text end*/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -400,6 +410,7 @@ html {
 
 /*global code end */
 /*pages start*/
+/*home start*/
 header {
   background: linear-gradient(106.24deg, #eee0ca -1.25%, #f9f3ea 96.26%);
 }
@@ -874,8 +885,35 @@ header {
   }
 }
 /* @media lg min width 1200 end*/
-/* @media lg min width 1200 start*/
-/* @media lg min width 1200 end*/
+/*home end*/
+/*section01 start*/
+.section-01 .mask-group .img {
+  max-width: 150px;
+  margin: 50px 0;
+}
+.section-01 .mask-group .img img {
+  width: 100%;
+}
+.section-01 .features__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-01 .features__text h3 {
+  margin-top: 100px;
+}
+.section-01 .features__text p {
+  max-width: 428px;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.875rem;
+  line-height: 1.625;
+  font-weight: normal;
+  color: #848199;
+}
+
+/*section01 end*/
 /*pages end*/
 
 /*# sourceMappingURL=basic.css.map */

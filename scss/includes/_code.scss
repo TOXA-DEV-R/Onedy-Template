@@ -26,3 +26,12 @@ $white-gl: var(--white-gl); // global white
 * {
   font-family: $font-fy-Poppins;
 }
+/* global artical-text start*/
+h3.articl-text {
+  font-family: $font-fy-Playfair-d;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #04004d;
+}
+/* global artical-text end*/
