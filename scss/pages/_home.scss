@@ -203,7 +203,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     h1 {
-      @include fontMix_01(2.5m, 3rem, bold);
+      @include fontMix_01(2.2rem, 3rem, bold);
       text-align: center;
       margin-top: 100px;
       font-family: $font-fy-Playfair-d;
@@ -244,7 +244,6 @@ header {
   &__progress {
     width: 62px;
     height: 62px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,8 +269,8 @@ header {
         position: absolute;
         top: -50%;
         left: -50%;
-        width: 48px !important;
-        height: 48px !important;
+        width: 100% !important;
+        height: 100% !important;
         transform: translate(50%, 50%);
       }
     }
@@ -286,18 +285,16 @@ header {
   }
   &__progress {
     position: absolute;
-    top: 39%;
+    top: 38.5%;
     left: 3.5%;
-
     z-index: 11;
   }
 
   &__mentor {
     position: absolute;
-    top: 61%;
-    left: 5px;
-    width: 210px;
-    height: 38px;
+    left: -14%;
+    width: 37%;
+    height: 6%;
     background: linear-gradient(91.44deg, #ffffff 31.77%, #f5f5f5 100%);
     opacity: 0.9;
     box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.04);
@@ -308,10 +305,12 @@ header {
     z-index: 12;
     .img {
       display: inline-flex;
-      margin-right: 7px;
+      img {
+        width: 16px;
+      }
     }
     p {
-      @include fontMix_01(0.7rem, 8rem, normal);
+      @include fontMix_01(0.8rem, 0.9rem, normal);
     }
   }
 
@@ -333,6 +332,13 @@ header {
 /*header_home end*/
 
 /* @media sm max width 576 start*/
+@media screen and (max-width: 379px) {
+  .header-home__left h1 {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+}
+/* @media sm max width 576 start*/
 @media screen and (max-width: 576px) {
   .navbar {
     > .container {
@@ -349,8 +355,11 @@ header {
       }
     }
   }
+  .header-home__mentor {
+    top: 61%;
+    left: -13%;
+  }
 }
-/* @media sm max width 576 end*/
 
 /* @media sm min width 576 start*/
 @media screen and (min-width: 576px) {
@@ -363,17 +372,6 @@ header {
   }
   .header-home {
     &__left {
-      h1 {
-        @include fontMix_01(2rem, 2.5rem, bold);
-      }
-    }
-    &__mentor {
-      width: 210px;
-      top: 61%;
-      left: -13%;
-      p {
-        @include fontMix_01(0.7rem, 0.8rem, normal);
-      }
     }
   }
 }
@@ -403,14 +401,6 @@ header {
     }
     &__right {
       width: 100%;
-    }
-    &__mentor {
-      width: 210px;
-      top: 61%;
-      left: -13%;
-      p {
-        @include fontMix_01(0.7rem, 0.8rem, normal);
-      }
     }
   }
 }
@@ -453,13 +443,6 @@ header {
         max-width: 350px;
       }
     }
-    &__mentor {
-      width: 248px;
-      top: 63%;
-      p {
-        @include fontMix_01(0.875rem, 0.875rem, normal);
-      }
-    }
   }
 }
 /* @media lg min width 992 end*/
@@ -499,11 +482,6 @@ header {
       .btn {
         padding: 16px 34px !important;
       }
-    }
-    &__mentor {
-      width: 248px;
-      top: 66.5%;
-      left: -15%;
     }
   }
 }

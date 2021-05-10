@@ -16,13 +16,55 @@ $(function () {
   $(".btn-close").click(function () {
     navbarModal.removeClass("active");
   });
-});
 
-/*noscrollingto start*/
-window.addEventListener("scroll", function () {
-  if ($(".navbar-modal").hasClass("active")) {
-    window.scrollTo(0, 0);
+  /*noscrollingto start*/
+  window.addEventListener("scroll", function () {
+    if ($(".navbar-modal").hasClass("active")) {
+      window.scrollTo(0, 0);
+    }
+  });
+  /*noscrollingto end*/
+
+  window.addEventListener("scroll", fontSizeFuc);
+  fontSizeFuc();
+  function fontSizeFuc() {
+    let menterWidth = document
+      .querySelector(".header-home__mentor")
+      .getBoundingClientRect().width;
+    let autoFontSize = Math.floor(menterWidth / 17);
+    let autoFontWidth = Math.floor(menterWidth / 14);
+    let autoPx = Math.floor(menterWidth / 30);
+    let marginTopMenter = Math.round(menterWidth * 1.8);
+    let marginTopProgress = Math.round(menterWidth * 1.04);
+    let marginLeftProgress = Math.round(menterWidth / 13);
+    let marginWidthProgress = Math.floor(menterWidth / 3.7);
+    let marginHeightProgress = Math.floor(menterWidth / 3.7);
+    let chartwidthtProgress = Math.floor(menterWidth / 4.9);
+    let chartHeightProgress = Math.floor(menterWidth / 4.9);
+    let mentorSpan = Math.floor(menterWidth / 20);
+
+    document.querySelector(
+      ".header-home__mentor p"
+    ).style.fontSize = `${autoFontSize}px`;
+    document.querySelector(
+      ".header-home__mentor .img img"
+    ).style.width = `${autoFontWidth}px`;
+    document.querySelector(
+      ".header-home__mentor .img"
+    ).style.marginRight = `${autoPx}px`;
+    document.querySelector(
+      ".header-home__mentor"
+    ).style.top = `${marginTopMenter}px`;
+
+    let mentor = document.querySelector(".header-home__progress");
+    let mentorChart = mentor.querySelector(".chart");
+    mentor.style.top = `${marginTopProgress}px`;
+    mentor.style.left = `${marginLeftProgress}px`;
+    mentor.style.width = `${marginWidthProgress}px`;
+    mentor.style.height = `${marginHeightProgress}px`;
+    mentorChart.style.width = `${chartwidthtProgress}px`;
+    mentorChart.style.height = `${chartHeightProgress}px`;
+
+    mentor.querySelector(".chart span").style.fontSize = `${mentorSpan}px`;
   }
 });
-
-/*noscrollingto end*/
