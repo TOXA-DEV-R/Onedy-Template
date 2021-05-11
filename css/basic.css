@@ -33,6 +33,24 @@ h3.articl-text {
 }
 
 /* global artical-text end*/
+/*.global__text start*/
+.global__text {
+  width: 100%;
+  text-align: center;
+}
+.global__text p {
+  margin-top: 12px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #848199;
+}
+
+/*.global__text end*/
+body {
+  overflow: hidden;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -1202,6 +1220,90 @@ header {
   }
 }
 /* @media lg min width 992 end*/
+.section-02 {
+  overflow: hidden;
+}
+.section-02 .about > .container {
+  padding: 0;
+}
+.section-02 .about .col-lg-6 {
+  margin-top: 28px;
+}
+.section-02 .about .global__text {
+  margin-top: 170px;
+}
+.section-02 .about__video {
+  width: 100%;
+  height: 309px;
+  position: relative;
+}
+.section-02 .about__video::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-34px, -102px);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff5722;
+}
+.section-02 .about__video::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-46px, 33px);
+  width: 111px;
+  height: 111px;
+  border-radius: 50%;
+  background: #ff5722;
+  z-index: -1;
+}
+.section-02 .about__video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.section-02 .about__video .logo {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+.section-02 .about__text {
+  margin-top: 39px;
+}
+.section-02 .about__text h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1f1f1f;
+  letter-spacing: 0.5px;
+}
+.section-02 .about__text p {
+  margin-top: 16px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(1, 0, 26, 0.75);
+}
+.section-02 .about__text a {
+  display: block;
+  margin-top: 32px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ff5722;
+}
+.section-02 .about__text a .fa {
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-02 .about .global__text h3 {
+    font-size: 1.6rem;
+  }
+}
 /*pages end*/
 
 /*# sourceMappingURL=basic.css.map */

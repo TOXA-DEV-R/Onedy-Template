@@ -35,3 +35,21 @@ h3.articl-text {
   color: #04004d;
 }
 /* global artical-text end*/
+
+/*.global__text start*/
+.global__text {
+  width: 100%;
+  text-align: center;
+  p {
+    margin-top: 12px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #848199;
+  }
+}
+/*.global__text end*/
+
+body {
+  overflow: hidden;
+}
