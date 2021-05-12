@@ -66,5 +66,41 @@ $(function () {
     mentorChart.style.height = `${chartHeightProgress}px`;
 
     mentor.querySelector(".chart span").style.fontSize = `${mentorSpan}px`;
+
+    let bodyWidth = document.body.clientWidth;
+    if (document.body.clientWidth < 768) {
+      var autoBodyWidth = Math.floor(bodyWidth / 2.49);
+      if (document.body.clientWidth >= 628) {
+        autoBodyWidth -= 50;
+      }
+    } else {
+      autoBodyWidth = 309;
+    }
+    document.querySelector(".about__video").style.height = `${autoBodyWidth}px`;
   }
+
+  $(".owl-carousel").owlCarousel({
+    loop: false,
+    margin: 32,
+    autoWidth: true,
+    nav: false,
+    dots: true,
+  });
+
+  const owlStage = document.querySelector(".owl-stage");
+  let windowCssTransf =
+    window
+      .getComputedStyle(owlStage)
+      .getPropertyValue("transform")
+      .split(",")[4]
+      .trim() + 274;
+  setTimeout(() => {
+    console.log(
+      window
+        .getComputedStyle(owlStage)
+        .getPropertyValue("transform")
+        .split(",")[4]
+        .trim()
+    );
+  }, 6000);
 });
