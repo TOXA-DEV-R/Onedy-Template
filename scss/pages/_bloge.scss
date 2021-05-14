@@ -38,7 +38,7 @@
     .owl-carousel {
       position: relative;
       margin-top: 42px;
-      margin-bottom: 52px;
+      margin-bottom: 82px;
       .owl-stage-outer {
         overflow: unset;
       }
@@ -77,6 +77,7 @@
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 54px);
+        display: flex;
         button {
           display: inline-flex;
           span {
@@ -199,7 +200,169 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .section-03 {
+    .blogs {
+      .global__text {
+        h3 {
+          text-align: center;
+          margin-bottom: 12px;
+        }
+        p {
+          margin: 0;
+          text-align: center !important;
+        }
+        .some-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          a {
+            margin-top: 20px;
+            font-size: 13px;
+            padding: 9px;
+            flex: 0 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* section-04 start*/
+/* map */
+.section-04 .map {
+  .global__text {
+    margin-top: 177px;
+  }
+  &-section {
+    margin-top: 42px;
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+/* map / */
+
+/* instructor */
+.section-04 .instructor {
+  &-block {
+    margin-top: 170px;
+    background: #04004d;
+    position: relative;
+    z-index: 3;
+    &-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      display: flex;
+      justify-content: space-between;
+      span {
+        display: inline-flex;
+        width: 122px;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.08) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        &:last-of-type {
+          margin-right: 134px;
+        }
+        &:first-of-type {
+          margin-left: 134px;
+        }
+      }
+    }
+    .global__text {
+      h3 {
+        padding-top: 65px;
+        font-size: 28px;
+        line-height: 28px;
+        color: white;
+      }
+      p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        color: #cccccc;
+      }
+      .register {
+        position: relative;
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        .btn {
+          width: 129px;
+          height: 46px;
+          margin-bottom: 65px;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 14px;
+          color: #ff5722;
+          background: transparent;
+          border: 1px solid #ff5722;
+          border-radius: 4px;
+          cursor: pointer;
+          outline: none;
+          transition: all 300ms ease-in-out;
+          &:last-of-type {
+            margin-left: 20px;
+          }
+          &:hover,
+          &.active {
+            color: #fff;
+            background: #ff5722;
+          }
+        }
+      }
+    }
+  }
+}
+/* instructor / */
+
+/* section-04 end*/
+
 @media screen and (max-width: 576px) {
+  .section-01 .features__text h3 {
+    font-size: 23px;
+  }
+  .section-01 .our-class__text {
+    margin-top: 70px;
+    h3 {
+      font-size: 23px;
+    }
+  }
+
+  .section-02 .student-say {
+    .global__text {
+      margin-top: 70px;
+      h3 {
+        font-size: 23px;
+      }
+    }
+    .owl-carousel {
+      margin-left: 48px;
+    }
+  }
+
+  /* section-03 */
+  /* pricing */
+  .section-03 .pricing .global__text {
+    margin-top: 100px;
+    h3 {
+      font-size: 23px;
+    }
+  }
+  /* pricing / */
+
   .section-03 {
     .blogs {
       > .container {
@@ -209,7 +372,10 @@
       }
       .global__text {
         margin: 0 15px;
-        margin-top: 170px;
+        margin-top: 70px;
+        h3 {
+          font-size: 22px;
+        }
       }
       .owl-carousel {
         .owl-nav {
@@ -245,6 +411,57 @@
           }
         }
       }
+    }
+  }
+  /* section-03 / */
+
+  /* section-04 */
+  .section-04 {
+    .map {
+      .global__text {
+        margin-top: 70px;
+        h3 {
+          font-size: 22px;
+          letter-spacing: 0px;
+        }
+        p {
+          font-size: 11px;
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+  /* instructor */
+  .section-04 .instructor {
+    &-block {
+      margin-top: 70px;
+      .global__text {
+        h3 {
+          font-size: 20px;
+        }
+        .register {
+          .btn {
+            width: 103px;
+            height: 35px;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+  /* instructor / */
+  /* section-04 / */
+}
+
+@media screen and (min-width: 482px) and (max-width: 576px) {
+  .section-04 .map .global__text h3 {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .section-03 {
+    .blogs .owl-carousel {
+      margin-left: -21px !important;
     }
   }
 }
