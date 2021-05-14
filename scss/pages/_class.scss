@@ -95,7 +95,8 @@
           transition: all 600ms ease-in-out;
         }
       }
-      &:hover {
+      &:hover,
+      &.active {
         transform: translateY(-48px);
         background: #ff5722;
         .features-card__bg {

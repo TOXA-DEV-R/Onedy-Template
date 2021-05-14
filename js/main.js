@@ -79,7 +79,7 @@ $(function () {
     document.querySelector(".about__video").style.height = `${autoBodyWidth}px`;
   }
 
-  $(".owl-carousel").owlCarousel({
+  $("#owl-carousel").owlCarousel({
     loop: false,
     margin: 32,
     autoWidth: true,
@@ -87,20 +87,12 @@ $(function () {
     dots: true,
   });
 
-  const owlStage = document.querySelector(".owl-stage");
-  let windowCssTransf =
-    window
-      .getComputedStyle(owlStage)
-      .getPropertyValue("transform")
-      .split(",")[4]
-      .trim() + 274;
-  setTimeout(() => {
-    console.log(
-      window
-        .getComputedStyle(owlStage)
-        .getPropertyValue("transform")
-        .split(",")[4]
-        .trim()
-    );
-  }, 6000);
+  $(".owl-carousel").owlCarousel({
+    loop: false,
+    margin: 32,
+    responsiveClass: true,
+    autoWidth: true,
+    nav: true,
+    dots: true,
+  });
 });
