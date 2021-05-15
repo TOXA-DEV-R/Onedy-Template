@@ -14,7 +14,7 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./css/basic.css">
+  <link rel="stylesheet" href="./css/basic.min.css">
   <title>Onedy</title>
 </head>
 
@@ -43,19 +43,19 @@
               </svg></a>
             <ul class="navbar__items">
               <li class="navbar__item">
-                <a href="/" class="navbar__link">Home</a>
+                <a href="#" class="navbar__link">Home</a>
               </li>
               <li class="navbar__item">
-                <a href="/" class="navbar__link">Class</a>
+                <a href="#class" class="navbar__link" id="navbar-link">Class</a>
               </li>
               <li class="navbar__item">
-                <a href="/" class="navbar__link">About</a>
+                <a href="#about" class="navbar__link" id="navbar-link">About</a>
               </li>
               <li class="navbar__item">
-                <a href="/" class="navbar__link">Pricing</a>
+                <a href="#pricing" class="navbar__link" id="navbar-link">Pricing</a>
               </li>
               <li class="navbar__item">
-                <a href="/" class="navbar__link">Blog</a>
+                <a href="#blogs" class="navbar__link" id="navbar-link">Blog</a>
               </li>
             </ul>
           </div>
@@ -301,7 +301,7 @@
     </div>
     <!-- Features end -->
     <!-- our-class start -->
-    <div class="our-class">
+    <div class="our-class" id="class">
       <div class="container">
         <div class="row justify-content-center">
           <div class="our-class__text">
@@ -411,7 +411,7 @@
   <!-- section-02 start -->
   <section class="section-02">
     <!-- about start -->
-    <div class="about">
+    <div class="about" id="about">
       <div class="container">
         <div class="row justify-content-center">
           <div class="global__text">
@@ -560,7 +560,7 @@
   <!-- section-03 start -->
   <section class="section-03">
     <!-- Pricing start -->
-    <div class="pricing">
+    <div class="pricing" id="pricing">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="global__text">
@@ -675,7 +675,7 @@
     </div>
     <!-- Pricing end -->
     <!-- Blogs start -->
-    <div class="blogs">
+    <div class="blogs" id="blogs">
       <div class="container">
         <div class="row justify-content-center">
           <div class="global__text">
@@ -828,6 +828,109 @@
     <!-- Instructor / -->
   </section>
   <!-- section-04 end -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-4 col-10">
+          <div class="footer-left">
+            <a href="#!" class="logo"><svg width="96" height="26" viewBox="0 0 96 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M44.7339 6.45947C40.6714 6.45947 38.1323 9.26221 38.1323 13.7446C38.1323 18.2271 40.6714 21.02 44.7339 21.02C48.7866 21.02 51.3354 18.2271 51.3354 13.7446C51.3354 9.26221 48.7866 6.45947 44.7339 6.45947ZM44.7339 8.3833C47.4097 8.3833 49.0894 10.4536 49.0894 13.7446C49.0894 17.0259 47.4097 19.0962 44.7339 19.0962C42.0581 19.0962 40.3687 17.0259 40.3687 13.7446C40.3687 10.4536 42.0581 8.3833 44.7339 8.3833ZM53.1714 20.7856H55.2808V14.7993C55.2808 13.2075 56.2378 12.1528 57.7222 12.1528C59.187 12.1528 59.9097 13.0024 59.9097 14.5454V20.7856H62.0288V14.1353C62.0288 11.7817 60.73 10.3364 58.4644 10.3364C56.8823 10.3364 55.7886 11.0591 55.2319 12.231H55.1831V10.5122H53.1714V20.7856ZM70.8765 17.7681C70.5933 18.6665 69.7046 19.272 68.5034 19.272C66.814 19.272 65.7397 18.0903 65.7397 16.3032V16.1763H72.9956V15.4536C72.9956 12.3384 71.2183 10.3267 68.3667 10.3267C65.4663 10.3267 63.6108 12.4751 63.6108 15.6978C63.6108 18.9399 65.437 20.981 68.4546 20.981C70.8081 20.981 72.5854 19.6431 72.8784 17.7681H70.8765ZM68.3667 12.0259C69.8413 12.0259 70.8374 13.1294 70.8862 14.7017H65.7495C65.8569 13.1489 66.8921 12.0259 68.3667 12.0259ZM78.4937 20.9614C79.9878 20.9614 81.1597 20.2095 81.7651 19.0376H81.8042V20.7856H83.855V6.69385H81.7358V12.2212H81.6968C81.1206 11.0884 79.9487 10.3462 78.4741 10.3462C75.896 10.3462 74.1772 12.4067 74.1772 15.6489C74.1772 18.8911 75.896 20.9614 78.4937 20.9614ZM79.0503 12.1235C80.6714 12.1235 81.7554 13.52 81.7554 15.6489C81.7554 17.7974 80.6714 19.1743 79.0503 19.1743C77.3804 19.1743 76.3354 17.8169 76.3354 15.6489C76.3354 13.4907 77.3804 12.1235 79.0503 12.1235ZM87.0483 24.6138C89.1772 24.6138 90.1929 23.813 91.0718 21.3228L94.9194 10.5122H92.6929L90.0952 18.8716H90.0562L87.4585 10.5122H85.1733L88.8843 20.7954C88.8843 20.8052 88.6987 21.4106 88.6987 21.4302C88.3765 22.4849 87.8491 22.895 86.8726 22.895C86.6968 22.895 86.3452 22.895 86.189 22.856V24.5649C86.3452 24.5942 86.8726 24.6138 87.0483 24.6138Z"
+                  fill="#04004D" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.7732 16.0413C16.1377 20.1197 21.3745 21.5171 25.47 19.1624L26.2378 20.4868C21.4079 23.2638 15.2319 21.6158 12.4433 16.8059L13.7732 16.0413Z"
+                  fill="#FF5722" />
+                <path
+                  d="M28.525 20.3285C28.525 22.198 27.0031 23.7136 25.1258 23.7136C23.2484 23.7136 21.7266 22.198 21.7266 20.3285C21.7266 18.4589 23.2484 16.9434 25.1258 16.9434C27.0031 16.9434 28.525 18.4589 28.525 20.3285Z"
+                  fill="#FF5722" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.311523 11.5275C0.311523 5.24954 5.35892 0.145572 11.6329 0.0205078C10.7971 1.64201 10.2258 3.41572 9.97433 5.28767C7.15833 5.99887 5.07042 8.5983 5.07042 11.6961C5.07042 15.3417 7.96198 18.2971 11.5289 18.2971C12.0124 18.2971 12.4836 18.2428 12.9368 18.1398C14.0059 19.7805 15.4963 21.0042 17.1827 21.7508C15.5918 22.5726 13.7847 23.0368 11.8688 23.0368C5.48589 23.0368 0.311523 17.8839 0.311523 11.5275ZM18.297 21.0938C21.3901 19.0284 23.426 15.5147 23.426 11.5275C23.426 6.59756 20.3135 2.39157 15.9386 0.752069C14.9964 2.20442 14.351 3.85829 14.0854 5.63251C16.3807 6.64479 17.9874 8.9787 17.9874 11.6961C17.9874 14.4659 16.3183 16.8372 13.9521 17.8168C15.0474 19.3866 16.5848 20.5027 18.297 21.0938Z"
+                  fill="#FF5722" />
+              </svg>
+            </a>
+            <p><span>Onedy</span> is an online learning school that will help people acquire new skills.</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. Pemuda Tersesat No. 296, Jakarta Timur Indonesia
+            </p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> hello@onedy.com</p>
+            <div class="icons">
+              <a href="!#"><i class="fab fa-facebook-f"></i></a>
+              <a href="!#"><i class="fab fa-instagram"></i></a>
+              <a href="!#"><i class="fab fa-twitter"></i></a>
+              <a href="!#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-5">
+          <ul>
+            <li>
+              <h4>Company</h4>
+            </li>
+            <li><a href="#about" id="navbar-link">About</a></li>
+            <li><a href="#!">Contact</a></li>
+            <li><a href="#!">Careers </a></li>
+            <li><a href="#blogs" id="navbar-link">Blog </a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-5">
+          <ul>
+            <li>
+              <h4>Support</h4>
+            </li>
+            <li><a href="#!">FAQs</a></li>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Help </a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-5">
+          <ul>
+            <li>
+              <h4>Company</h4>
+            </li>
+            <li><a href="#!">Community</a></li>
+            <li><a href="#!">Telegram</a></li>
+            <li><a href="#!">Go Premium </a></li>
+            <li><a href="#!">Affiliates </a></li>
+            <li><a href="#!">Free Classes </a></li>
+            <li><a href="#!">Scholarship </a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-5">
+          <ul>
+            <li>
+              <h4>Terms</h4>
+            </li>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Terms and Conditions</a></li>
+            <li><a href="#!">Copyright Policy</a></li>
+            <li><a href="#!">Security</a></li>
+          </ul>
+        </div>
+        <div class="bor-bottom"></div>
+      </div>
+      <div class="row footer-bottom justify-content-center">
+        <div class="col-lg-4 col-6">
+          <div class="footer-bottom-section">
+            <span>Terms and Conditions</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6">
+          <div class="footer-bottom-section">
+            <span>23,022,039 Registered User</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6">
+          <div class="footer-bottom-section">
+            <span>Copyright © 2020 Onedy All rights reserved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer / -->
+
   <!-- script start -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/jquery.easypiechart.js"></script>
