@@ -107,3 +107,18 @@ $(function () {
     dots: true,
   });
 });
+
+const scrollMenuLink = () => {
+  const scrollMenu = document.querySelectorAll("#navbar-link");
+  for (let i in scrollMenu) {
+    if (scrollMenu.hasOwnProperty(i)) {
+      scrollMenu[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(scrollMenu[i].hash).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    }
+  }
+};
+scrollMenuLink();
