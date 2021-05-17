@@ -78,7 +78,7 @@ $(function () {
     }
     document.querySelector(".about__video").style.height = `${autoBodyWidth}px`;
   }
-
+  // owl-carousel
   $("#owl-carousel").owlCarousel({
     loop: false,
     margin: 32,
@@ -106,6 +106,26 @@ $(function () {
     nav: true,
     dots: true,
   });
+
+  // scrollButton start
+  $(window).scroll(function () {
+    // console.log(window.scrollY);
+    if (window.scrollY > 200) {
+      $(".btn-up").addClass("active");
+    } else {
+      $(".btn-up").removeClass("active");
+    }
+  });
+
+  $(".btn-up").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
+  // scrollButton end
 });
 
 const scrollMenuLink = () => {

@@ -30,9 +30,6 @@
           cursor: pointer;
           transition: all 400ms ease-in-out;
           background: transparent;
-          &:first-of-type {
-            background: #ff5722;
-          }
           &:hover,
           &.active {
             color: #ffffff;

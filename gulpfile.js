@@ -19,7 +19,7 @@ gulp.task("sass", function () {
     )
     .pipe(
       autoprefixer({
-        overrideBrowserslist: ["last 4 versions"],
+        overrideBrowserslist: ["last 9 versions"],
         cascade: false,
       })
     )
